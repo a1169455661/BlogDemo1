@@ -1,5 +1,6 @@
 package com.example.administrator.kotlin
 
+import android.annotation.SuppressLint
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -47,7 +48,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, View.OnLongClick
      * 重写OnClickListener接口的onClick方法
      */
     override fun onClick(p0: View?) {
-        when (p0?.id) {
+        when (p0!!.id) {
             R.id.btn_01 -> {
 //              只进行网络请求
                 network()

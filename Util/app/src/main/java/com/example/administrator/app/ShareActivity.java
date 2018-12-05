@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.administrator.base.WinBaseActivity;
 import com.example.administrator.util.L;
 import com.example.administrator.util.ShareUtils;
 
@@ -17,7 +16,7 @@ import butterknife.OnClick;
 /**
  * SharedPreferences 的封装
  */
-public class ShareActivity extends WinBaseActivity {
+public class ShareActivity extends AppCompatActivity {
 
     //   原生存储数据
     @BindView(R.id.btn_01)

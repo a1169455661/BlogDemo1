@@ -7,12 +7,10 @@ import android.text.TextUtils
 import android.view.View
 import android.webkit.JavascriptInterface
 import android.webkit.WebView
-import android.webkit.WebViewClient
-import android.widget.Toast
 import com.example.administrator.androidtoh5.R
 import com.example.administrator.androidtoh5.util.L
+
 import kotlinx.android.synthetic.main.activity_java_to_js.*
-import kotlinx.android.synthetic.main.activity_web.*
 import org.jetbrains.anko.toast
 
 /**
@@ -46,7 +44,7 @@ class JavaToJsActivity : AppCompatActivity() {
 
         if (!TextUtils.isEmpty(string)) {
             //调用页面的js代码的javaToJs方法把参数传递进入
-            webView!!.loadUrl("javascript:javaToJs('$string')")
+            webView?.loadUrl("javascript:javaToJs('$string')")
             //将webView显示到界面上
             setContentView(webView)
         }
@@ -55,18 +53,19 @@ class JavaToJsActivity : AppCompatActivity() {
     /**
      * 进行基础的配置
      */
+    @SuppressLint("AddJavascriptInterface", "SetJavaScriptEnabled")
     private fun initView() {
         webView= WebView(this)
-        val webSettings = webView!!.getSettings()
+        val webSettings = webView?.getSettings()
         //设置支持javaScript脚步语言
-        webSettings.javaScriptEnabled = true
+        webSettings?.javaScriptEnabled = true
 
         //设置支持js调用java
         //JsToJava是js回调的类，Js调用的Java方法都应该写在里面
-        webView!!.addJavascriptInterface(JsToJava(), "Android")
+        webView?.addJavascriptInterface(JsToJava(), "Android")
 
         //加载网络资源
-        webView!!.loadUrl("https://a704.gitee.io/web/JavaToJs.html")
+        webView?.loadUrl("https://a704.gitee.io/web/JavaToJs.html")
     }
 
 
@@ -78,7 +77,7 @@ class JavaToJsActivity : AppCompatActivity() {
         //必须有该注解
         @JavascriptInterface
         fun show() {
-            toast("我被js调用了啦")
+            toast("成功在网页")
         }
 
     }

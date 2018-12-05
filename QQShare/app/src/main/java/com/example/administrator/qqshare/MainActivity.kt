@@ -33,6 +33,9 @@ class MainActivity : WinActivity() {
         LogOut()
     }
 
+    /**
+     * 退出账户
+     */
     private fun LogOut() {
         mLogOut.setOnClickListener(View.OnClickListener {
             UMShareAPI.get(this).deleteOauth(this, SHARE_MEDIA.QQ, object : UMAuthListener {

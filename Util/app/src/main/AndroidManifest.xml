@@ -21,7 +21,6 @@
         </activity>
 
         <!--全屏化Activity基础类-->
-        <activity android:name="com.example.administrator.base.WinBaseActivity" />
 
         <!--字体设计Activity-->
         <activity android:name=".FontActivity"/>

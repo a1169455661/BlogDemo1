@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".module.share.MenuActivity">
+
+    <!--* 1，底部带白色背景图标-->
+    <Button
+        android:id="@+id/btn_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="底部带白色背景图标" />
+    <!--* 2，底部不带白色背景图标-->
+    <Button
+        android:id="@+id/btn_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="底部不带白色背景图标" />
+    <!--* 3，中部带白色背景图标-->
+    <Button
+        android:id="@+id/btn_03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="中部带白色背景图标" />
+    <!--* 3，中部不带白色背景图标-->
+    <Button
+        android:id="@+id/btn_04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="中部不带白色背景图标" />
+</LinearLayout>

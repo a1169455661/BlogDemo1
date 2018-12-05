@@ -11,7 +11,7 @@ import com.example.administrator.androidtoh5.util.WebUtil
 import kotlinx.android.synthetic.main.activity_web.*
 
 /**
- * 1，WebView加载网页和几个常用方法
+ * 1，WebView加载网页和几个常用的方法
  *2， 一键滑动到网页的顶部
  */
 class WebActivity : AppCompatActivity() {

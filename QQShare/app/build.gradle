@@ -48,4 +48,6 @@ dependencies {
     implementation project(':umeng')
     //图片加载框架
     compile 'com.github.bumptech.glide:glide:4.5.0'
+    //Anko框架，用来简化吐司
+    implementation "org.jetbrains.anko:anko-commons:0.10.5"
 }

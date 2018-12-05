@@ -11,10 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+
+        <!--WebView加载网页和几个常用的方法-->
         <activity android:name=".module.webStudy.WebActivity">
 
         </activity>
+
+        <!--java和javaScript的互调-->
         <activity android:name=".module.webStudy.JavaToJsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

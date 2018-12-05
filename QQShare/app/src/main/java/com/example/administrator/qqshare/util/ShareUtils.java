@@ -3,6 +3,10 @@ package com.example.administrator.qqshare.util;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import com.example.administrator.qqshare.MainActivity;
+import com.umeng.socialize.ShareAction;
+import com.umeng.socialize.bean.SHARE_MEDIA;
+
 
 /**
  * Created by 舍长 on 2018/5/28.
@@ -14,6 +18,7 @@ public class ShareUtils {
 
     //存储
     public static void putString(Context mContext, String key, String value) {
+
         SharedPreferences sharedPreferences = mContext.getSharedPreferences(NAME, Context.MODE_PRIVATE);
         sharedPreferences.edit().putString(key, value).commit();
     }
