@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\blog\project\QQShare\umeng\assets"/><source path="D:\blog\project\QQShare\umeng\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="D:\blog\project\QQShare\umeng\build-types\release\assets"/></dataSet></merger>
